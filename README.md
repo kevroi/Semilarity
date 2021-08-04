@@ -10,6 +10,12 @@ As of the last commit, the python script containing the entire program is stored
 ![Architecture Schematic for Semilarity](./images/SemilarityArch.png)
 
 ## How it Works
+Search terms will be refered to as keywords and are read in from the first row of `keywords.xlsx`.  
+A GET request is made for a BBC search using each keyword. The search results page is then parsed for links that are known to lead to BBC News articles only. Each valid result URL is opened with yet another HTTP request and the text from the article is downloaded as a `.txt` file in a directory created for the keyword.  
+The article text is alsow saved to a corpus list data structure. This will be used for all natural language processing from here on.  
+First a TF-IDF statistical analysis is executed on the corpus to generate a matrix of TF-IDF scores for the keywords.  
+Next, stop words are removed from the corpus to prepare it for a more thorough analysis using a neural network. This will involve tokenizing the articles to build a vocabulary and then training the neural network. The trained neural network can then embed our articles into an abstract semantic vector space from which semantic distances and cosine simalarities between vectors are computed.  
+The main results (Semantic Distances, Cosine Similarities and TF-IDF scores) are then visualised to characterise the behaviour of the artciles in question.
 
 ## Results
 For the deault set of search terms (which are cyber security related, and found in `keywords.xlsx` in this repo), the following semantic distances were obtained,  
