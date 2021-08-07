@@ -61,3 +61,8 @@ soupsieve
 as listed in `requirements.txt`.
 
 ## Installation
+After cloning the repo, add your search terms to `keywords.xlsx' and run the program from your commandline. All visualisiations will be plotted automatically.
+```
+python main.py
+```
+Note: Some command lines may need `python3` to be entered instead of `python` for the above command.
