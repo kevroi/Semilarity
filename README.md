@@ -58,8 +58,6 @@ seaborn
 sklearn
 soupsieve
 ```
-
-,
 as listed in `requirements.txt`.
 
 ## Installation
