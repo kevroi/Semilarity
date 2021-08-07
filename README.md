@@ -40,7 +40,24 @@ Additionally, the Term Frequency Inverse Document Frequency (TF-IDF) statistic w
 
 
 ## Dependencies
-The full scope of interaction of dependencies was described in the Architecture section. The dependencies used in this project are:  
+The full scope of interaction of dependencies was described in the Architecture section. The dependencies used in this project are:
+
+```
+beautifulsoup4
+gensim
+matplotlib
+networkx
+nltk
+numpy
+openpyxl
+pandas
+requests
+scikit-learn
+scipy
+seaborn
+sklearn
+soupsieve
+```
 
 ,
 as listed in `requirements.txt`.
