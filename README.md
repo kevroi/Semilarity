@@ -76,3 +76,6 @@ Finally, run the program! All visualisiations will be plotted automatically and 
 python main.py
 ```
 Note: Some command lines may need `python3` to be entered instead of `python` for the above command.
+
+## Licence
+See the [LICENCE](LICENCE.md) file for license rights and limitations (MIT).
